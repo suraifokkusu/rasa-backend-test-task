@@ -1,0 +1,17 @@
+{
+    "name": "mikita/backend",
+    "autoload": {
+        "psr-4": {
+            "Mikita\\Backend\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "suraifokkusu",
+            "email": "79616065+suraifokkusu@users.noreply.github.com"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^11.2"
+    }
+}
