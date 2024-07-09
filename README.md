@@ -44,7 +44,7 @@
 1. Клонируйте репозиторий:
 
    ```sh
-   git clone https://github.com/suraifokkusu/rasa-test-task.git
+   git clone https://github.com/suraifokkusu/rasa-backend-test-task.git
    cd rasa-backend-test-task
    ```
 
