@@ -1,19 +1,89 @@
-# Composer
-/vendor/
-
-# PHPStorm
-/.idea/
-/*.iml
-
-# Node
-node_modules/
-
-# OS generated files
-.DS_Store
-Thumbs.db
-
-# Logs
+# Logs and debug
 *.log
+*.sql
+*.sqlite
 
-# Environment variables
+# Composer dependencies
+/vendor/
+composer.lock
+
+# Laravel specific
 .env
+.phpunit.result.cache
+/storage/*.key
+/storage/logs/*.log
+/storage/framework/cache/*
+/storage/framework/sessions/*
+/storage/framework/views/*
+
+# Symfony specific
+/.env
+/var/
+/vendor/
+/node_modules/
+/public/bundles/
+
+# Zend Framework specific
+/cache/*
+/logs/*
+
+# CakePHP specific
+/tmp/*
+/logs/*
+/webroot/files/*
+/webroot/img/files/*
+/vendor/
+/node_modules/
+/plugins/*
+
+# Slim Framework specific
+tmp/*
+log/*
+
+# FuelPHP specific
+/fuel/app/cache/*
+/fuel/app/logs/*
+/fuel/vendor/
+/fuel/core/vendor/
+/fuel/packages/*
+
+# WordPress specific
+wp-content/plugins/*
+wp-content/mu-plugins/*
+wp-content/themes/*
+wp-content/uploads/*
+
+# Drupal specific
+sites/*/files
+sites/*/private
+sites/*/modules
+sites/*/themes
+
+# Joomla specific
+libraries/vendor
+tmp/*
+
+# Magento specific
+/app/etc/env.php
+/var/*
+/vendor/*
+/pub/media/*
+/pub/static/*
+
+# CodeIgniter specific
+/htdocs/system/cache/*
+/htdocs/system/logs/*
+/htdocs/system/helpers/*
+/htdocs/system/database/drivers/*
+/htdocs/system/plugins/*
+/htdocs/system/libraries/*
+/htdocs/system/language/*
+/htdocs/system/config/*
+/htdocs/system/core/*
+/htdocs/system/models/*
+/htdocs/system/scaffolding/*
+/htdocs/system/views/*
+/htdocs/system/errors/*
+
+# DUMP 
+/dump/

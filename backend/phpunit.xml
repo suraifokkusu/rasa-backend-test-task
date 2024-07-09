@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit  bootstrap="bootstrap.php" 
+          colors="true">
+  <testsuites>
+    <testsuite name="Unit Tests">
+      <directory>./tests/Unit</directory>
+    </testsuite>
+    <testsuite name="Integration Tests">
+      <directory>./tests/Integration</directory>
+    </testsuite>
+    <testsuite name="Functional Tests">
+      <directory>./tests/Functional</directory>
+    </testsuite>
+  </testsuites>
+</phpunit>

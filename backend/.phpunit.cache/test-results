@@ -1,0 +1,1 @@
+{"version":1,"defects":{"SubmitReviewTest::testValidReviewSubmission":5,"SubmitReviewTest::testInvalidRating":5,"SubmitReviewTest::testLongComment":5},"times":{"SubmitReviewTest::testValidReviewSubmission":0.025,"SubmitReviewTest::testInvalidRating":0.011,"SubmitReviewTest::testLongComment":0.012}}

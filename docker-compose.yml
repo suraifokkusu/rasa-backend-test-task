@@ -1,0 +1,44 @@
+version: '3.3'
+
+services:
+  db:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: reviews_db
+      MYSQL_USER: reviews_user
+      MYSQL_PASSWORD: reviews_password
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./sql/init.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - default
+
+  backend:
+    hostname: backend
+    container_name: backend
+    build: ./backend
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+    environment:
+      DB_HOST: db
+      DB_USER: reviews_user
+      DB_PASSWORD: reviews_password
+      DB_NAME: reviews_db
+    networks:
+      - default
+
+  frontend:
+    hostname: frontend
+    container_name: frontend
+    build: ./frontend
+    ports:
+      - "3000:3000"
+    networks:
+      - default
+
+networks:
+  default:
+    driver: bridge
