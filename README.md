@@ -190,4 +190,4 @@ export const submitReview = async (user_id: string, rating: number, comment: str
 - Валидация данных.
 - По возможности покрыть код тестами.
 
-![Alt](https://repobeats.axiom.co/api/embed/66b3cb1d03bece2f75b6cc95aa5fa5445f00aa2f.svg "Repobeats analytics image")
+![Alt](https://repobeats.axiom.co/api/embed/33fb91d3f9ce8e850bd83440bba87bcca3d9bbaf.svg "Repobeats analytics image")
